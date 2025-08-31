@@ -3,7 +3,13 @@ function getInputValue(id) {
 }
 
 function getIntegerInputValue(id) {
-    const element = document.getElementById(id).value;
+    const input = document.getElementById(id).value;
+    const convertedInput = parseInt(input);
+    return convertedInput;
+}
+
+function getIntegerElementValue(id) {
+    const element = document.getElementById(id).innerText;
     const convertedElement = parseInt(element);
     return convertedElement;
 }

@@ -36,7 +36,7 @@
                     <img class="size-12" src="assets/images/Group.png" alt="Logo">
                 </div>
                 <div>
-                    <h3 class="font-extrabold text-lg">$<span>45000</span></h3>
+                    <h3 class="font-extrabold text-lg">$<span id="main-balance">45000</span></h3>
                     <p class="text-gray-500">Available Balance</p>
                 </div>
             </div>
@@ -184,7 +184,7 @@
                         <fieldset class="fieldset">
 
                             <label class="font-medium text-gray-700">Select A Bank</label>
-                            <select
+                            <select id="select-bank" required
                                 class="select  w-full px-5 select-lg font-light text-sm border-none bg-neutral-100 rounded-full">
                                 <option disabled selected>Select Bank</option>
                                 <option value="Brac Bank">BRAC BANK</option>
@@ -194,21 +194,21 @@
                             </select>
 
                             <label class="font-medium  text-gray-700">Bank Acount Number</label>
-                            <input id="mobile-number" type="text"
+                            <input id="add-money-mobile-number" type="text"
                                 class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
                                 placeholder="Enter 11 digit account number" required />
 
                             <label class="font-medium  text-gray-700">Amount to Add</label>
-                            <input id="mobile-number" type="number"
+                            <input id="add-money-amount" type="number"
                                 class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
                                 placeholder="Add amount to withdraw" required />
 
                             <label class="font-medium text-gray-700">Pin Number</label>
-                            <input id="pin-number" type="password"
+                            <input id="add-money-pin-number" type="password"
                                 class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
                                 placeholder="Enter 4 Digit pin" required />
 
-                            <button id="login-btn"
+                            <button id="add-money-btn"
                                 class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Add Money</button>
                         </fieldset>
                     </form>
@@ -421,6 +421,7 @@
 
     <script src="utilities/utilities.js"></script>
     <script src="script/toggle.js"></script>
+    <script src="script/addMoney.js"></script>
 </body>
 
 </html>
