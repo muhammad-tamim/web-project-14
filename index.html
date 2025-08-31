@@ -60,42 +60,42 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-3 gap-4">
-                    <div
+                    <div id="add-money-box"
                         class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
                         <div>
                             <img src="assets/images/wallet1.png" alt="add money">
                         </div>
                         <p class="text-sm ">Add Money</p>
                     </div>
-                    <div
+                    <div id="cash-out-box"
                         class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
                         <div>
                             <img src="assets/images/send1.png" alt="add money">
                         </div>
                         <p class="text-sm ">Cash Out</p>
                     </div>
-                    <div
+                    <div id="transfer-money-box"
                         class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-2 py-5 space-y-2 cursor-pointer">
                         <div>
                             <img src="assets/images/money1.png" alt="add money">
                         </div>
                         <p class="text-sm ">Transfer Money</p>
                     </div>
-                    <div
+                    <div id="get-bonus-box"
                         class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
                         <div>
                             <img src="assets/images/bonus1.png" alt="add money">
                         </div>
                         <p class="text-sm ">Get Bonus</p>
                     </div>
-                    <div
+                    <div id="pay-bill-box"
                         class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
                         <div>
                             <img src="assets/images/purse1.png" alt="add money">
                         </div>
                         <p class="text-sm ">Pay Bill</p>
                     </div>
-                    <div
+                    <div id="transaction-box"
                         class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
                         <div>
                             <img src="assets/images/transaction1.png" alt="add money">
@@ -108,7 +108,7 @@
     </main>
     <footer>
         <!-- Latest Payment Section -->
-        <section class="pt-8 pb-20 px-6">
+        <section id="latest-payment-section" class="pt-8 pb-20 px-6">
             <div class="flex justify-between items-center">
                 <h1 class="font-semibold text-lg">Latest Payment</h1>
                 <p class="text-gray-500 text-sm cursor-pointer">View All</p>
@@ -174,7 +174,7 @@
         </section>
 
         <!-- Add Money Section -->
-        <section class="pt-8 pb-20 px-6">
+        <section id="add-money-section" class="pt-8 pb-20 px-6">
             <div class="">
                 <h1 class="font-semibold text-lg">Add Money</h1>
             </div>
@@ -217,7 +217,7 @@
         </section>
 
         <!-- Cash Out Section -->
-        <section class="pt-8 pb-20 px-6">
+        <section id="cash-out-section" class="pt-8 pb-20 px-6">
             <div class="">
                 <h1 class="font-semibold text-lg">Cash Out</h1>
             </div>
@@ -242,7 +242,8 @@
                                 placeholder="Enter 4 Digit pin number" required />
 
                             <button id="login-btn"
-                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Add Money</button>
+                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Withdraw
+                                Money</button>
                         </fieldset>
                     </form>
                 </div>
@@ -251,7 +252,7 @@
 
 
         <!-- Transfer Money Section -->
-        <section class="pt-8 pb-20 px-6">
+        <section id="transfer-money-section" class="pt-8 pb-20 px-6">
             <div class="">
                 <h1 class="font-semibold text-lg">Transfer Money</h1>
             </div>
@@ -284,7 +285,7 @@
         </section>
 
         <!-- Get Bonus Section -->
-        <section class="pt-8 pb-20 px-6">
+        <section id="get-bonus-section" class="pt-8 pb-20 px-6">
             <div class="">
                 <h1 class="font-semibold text-lg">Get Bonus</h1>
             </div>
@@ -307,7 +308,7 @@
         </section>
 
         <!-- Pay Bill Section -->
-        <section class="pt-8 pb-20 px-6">
+        <section id="pay-bill-section" class="pt-8 pb-20 px-6">
             <div class="">
                 <h1 class="font-semibold text-lg">Pay Bill</h1>
             </div>
@@ -351,7 +352,7 @@
         </section>
 
         <!-- Transaction History Section -->
-        <section class="pt-8 pb-20 px-6">
+        <section id="transaction-history-section" class="pt-8 pb-20 px-6">
             <div class="flex justify-between items-center">
                 <h1 class="font-semibold text-lg">Transaction History</h1>
                 <p class="text-gray-500 text-sm cursor-pointer">View All</p>
@@ -417,6 +418,9 @@
         </section>
 
     </footer>
+
+    <script src="utilities/utilities.js"></script>
+    <script src="script/toggle.js"></script>
 </body>
 
 </html>

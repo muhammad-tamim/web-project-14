@@ -17,6 +17,27 @@
       }
     </style>
 ```  
+2. If we want to handle toggle using tailwind CSS, we have this use if-else to add and remove: 
+```js
+function handleToggle(id, status) {
+    const element = document.getElementById(id);
+
+    if (status === "block") {
+        element.classList.remove("hidden");
+        element.classList.add("block");
+    }
+    else if (status === "hidden") {
+        element.classList.remove("block");
+        element.classList.add("hidden");
+    }
+}
+```
+but if we used raw css instead of tailwind css, then  we don't need extra if-else block: 
+```js
+function handleToggle(id, status) {
+    document.getElementById(id).style.display = "status";
+}
+```
 
 ## Challenges I faced while Building This Project:
 
