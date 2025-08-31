@@ -318,7 +318,7 @@
                         <fieldset class="fieldset">
 
                             <label class="font-medium text-gray-700">Select To Pay</label>
-                            <select
+                            <select id="select-pay"
                                 class="select  w-full px-5 select-lg font-light text-sm border-none bg-neutral-100 rounded-full">
                                 <option disabled selected>Select Pay</option>
                                 <option value="Education">Education</option>
@@ -329,21 +329,21 @@
                             </select>
 
                             <label class="font-medium  text-gray-700">Biller Acount Number</label>
-                            <input id="mobile-number" type="text"
+                            <input id="biller-mobile-number" type="text"
                                 class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
                                 placeholder="Enter 11 digit account number" required />
 
                             <label class="font-medium  text-gray-700">Amount to Pay</label>
-                            <input id="mobile-number" type="number"
+                            <input id="pay-bill-amount" type="number"
                                 class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
                                 placeholder="Add amount to pay" required />
 
                             <label class="font-medium text-gray-700">Pin Number</label>
-                            <input id="pin-number" type="password"
+                            <input id="pay-bill-pin-number" type="password"
                                 class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
                                 placeholder="Enter 4 Digit pin number" required />
 
-                            <button id="login-btn"
+                            <button id="pay-bill-btn"
                                 class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Pay Now</button>
                         </fieldset>
                     </form>
@@ -425,6 +425,7 @@
     <script src="../script/cashOut.js"></script>
     <script src="../script/transferMoney.js"></script>
     <script src="../script/getBonus.js"></script>
+    <script src="../script/payBill.js"></script>
 </body>
 
 </html>
