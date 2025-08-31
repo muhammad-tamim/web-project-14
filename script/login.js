@@ -6,7 +6,7 @@ document.getElementById("login-btn").addEventListener("click", (e) => {
 
     if (mobileNumber.length === 11) {
         if (pinNumber === 1234) {
-            window.location.href = "../index.html"
+            window.location.href = "../pages/home.html"
         }
         else {
             alert("Your pin number must be 1234");

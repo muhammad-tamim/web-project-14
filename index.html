@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo</title>
-    <link rel="shortcut icon" href="assets/images/Group.png" type="image/x-icon">
+    <title>Payoo | LogIn</title>
+    <link rel="shortcut icon" href="../assets/images/Group.png" type="image/x-icon">
     <!-- DaisyUI and Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -22,406 +22,44 @@
     <style type="text/tailwindcss">
         @theme {
         --color-primary: #0874F2;
-        --color-secondary: #080808;
+        --font-outfit: "Outfit", sans-serif; 
       }
     </style>
 </head>
 
-<body class="font-outfit max-w-md mx-auto border bg-gray-100">
-    <!-- header section -->
-    <section class="border-b border-b-gray-200 shadow-sm bg-white">
-        <header class="flex justify-between items-center py-2 p-6">
-            <div class="flex items-center ">
-                <div>
-                    <img class="size-12" src="assets/images/Group.png" alt="Logo">
-                </div>
-                <div>
-                    <h3 class="font-extrabold text-lg">$<span id="main-balance">45000</span></h3>
-                    <p class="text-gray-500">Available Balance</p>
+<body class="bg-gray-100 font-outfit">
+    <section class="max-w-md min-h-screen mx-auto flex flex-col justify-center">
+
+        <div class=" flex flex-col items-center relative">
+            <img class="w-8/12 h-auto absolute -top-8" src="../assets/images/bg.png" alt="">
+            <img src="../assets/images/Group.png" alt="">
+        </div>
+
+        <div>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-md">
+                    <form class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="font-medium">Mobile Number</label>
+                            <input id="mobile-number" type="number"
+                                class="input w-full border-none bg-neutral-100 rounded-full"
+                                placeholder="Enter your 11 digit number" required />
+                            <label class="font-medium">4 Digit Pin</label>
+                            <input id="pin-number" type="password"
+                                class="input w-full border-none bg-neutral-100 rounded-full"
+                                placeholder="Enter 1234 for pin" required />
+                            <button id="login-btn"
+                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Login</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
-            <div>
-                <button class="btn btn-ghost border-gray-200 text-gray-500">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    Log Out
-                </button>
-            </div>
-        </header>
+        </div>
+
     </section>
 
-    <main>
-        <!-- Services Section -->
-        <section class="rounded-b-3xl bg-white">
-            <div class="p-6">
-                <div class="py-8">
-                    <h1 class="font-bold text-2xl pb-3">Welcome to Payooo!</h1>
-                    <p class="text-gray-500">Enjoy fast, secure, and convenient financial services with low cash-out
-                        fees.
-                    </p>
-                </div>
-                <div class="grid grid-cols-3 gap-4">
-                    <div id="add-money-box"
-                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
-                        <div>
-                            <img src="assets/images/wallet1.png" alt="add money">
-                        </div>
-                        <p class="text-sm ">Add Money</p>
-                    </div>
-                    <div id="cash-out-box"
-                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
-                        <div>
-                            <img src="assets/images/send1.png" alt="add money">
-                        </div>
-                        <p class="text-sm ">Cash Out</p>
-                    </div>
-                    <div id="transfer-money-box"
-                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-2 py-5 space-y-2 cursor-pointer">
-                        <div>
-                            <img src="assets/images/money1.png" alt="add money">
-                        </div>
-                        <p class="text-sm ">Transfer Money</p>
-                    </div>
-                    <div id="get-bonus-box"
-                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
-                        <div>
-                            <img src="assets/images/bonus1.png" alt="add money">
-                        </div>
-                        <p class="text-sm ">Get Bonus</p>
-                    </div>
-                    <div id="pay-bill-box"
-                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
-                        <div>
-                            <img src="assets/images/purse1.png" alt="add money">
-                        </div>
-                        <p class="text-sm ">Pay Bill</p>
-                    </div>
-                    <div id="transaction-box"
-                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
-                        <div>
-                            <img src="assets/images/transaction1.png" alt="add money">
-                        </div>
-                        <p class="text-sm ">Transaction</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <!-- Latest Payment Section -->
-        <section id="latest-payment-section" class="pt-8 pb-20 px-6">
-            <div class="flex justify-between items-center">
-                <h1 class="font-semibold text-lg">Latest Payment</h1>
-                <p class="text-gray-500 text-sm cursor-pointer">View All</p>
-            </div>
-            <div class="py-4 space-y-3">
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Add Money Section -->
-        <section id="add-money-section" class="pt-8 pb-20 px-6">
-            <div class="">
-                <h1 class="font-semibold text-lg">Add Money</h1>
-            </div>
-            <div class="py-4 space-y-3">
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <form class="w-full">
-                        <fieldset class="fieldset">
-
-                            <label class="font-medium text-gray-700">Select A Bank</label>
-                            <select id="select-bank" required
-                                class="select  w-full px-5 select-lg font-light text-sm border-none bg-neutral-100 rounded-full">
-                                <option disabled selected>Select Bank</option>
-                                <option value="Brac Bank">BRAC BANK</option>
-                                <option value="City Bank">CITY BANK</option>
-                                <option value="Sonali Bank">SONALI BANK</option>
-                                <option value="Eastern Bank">EASTERN BANK</option>
-                            </select>
-
-                            <label class="font-medium  text-gray-700">Bank Acount Number</label>
-                            <input id="add-money-mobile-number" type="text"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 11 digit account number" required />
-
-                            <label class="font-medium  text-gray-700">Amount to Add</label>
-                            <input id="add-money-amount" type="number"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Add amount to withdraw" required />
-
-                            <label class="font-medium text-gray-700">Pin Number</label>
-                            <input id="add-money-pin-number" type="password"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 4 Digit pin" required />
-
-                            <button id="add-money-btn"
-                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Add Money</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Cash Out Section -->
-        <section id="cash-out-section" class="pt-8 pb-20 px-6">
-            <div class="">
-                <h1 class="font-semibold text-lg">Cash Out</h1>
-            </div>
-            <div class="py-4 space-y-3">
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <form class="w-full">
-                        <fieldset class="fieldset">
-
-                            <label class="font-medium  text-gray-700">Agent Number</label>
-                            <input id="mobile-number" type="number"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 11 digit number" required />
-
-                            <label class="font-medium  text-gray-700">Amount</label>
-                            <input id="mobile-number" type="number"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter amount to withdraw" required />
-
-                            <label class="font-medium text-gray-700">Pin Number</label>
-                            <input id="pin-number" type="password"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 4 Digit pin number" required />
-
-                            <button id="login-btn"
-                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Withdraw
-                                Money</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Transfer Money Section -->
-        <section id="transfer-money-section" class="pt-8 pb-20 px-6">
-            <div class="">
-                <h1 class="font-semibold text-lg">Transfer Money</h1>
-            </div>
-            <div class="py-4 space-y-3">
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <form class="w-full">
-                        <fieldset class="fieldset">
-
-                            <label class="font-medium  text-gray-700">User Account Number</label>
-                            <input id="mobile-number" type="number"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 11 digit number" required />
-
-                            <label class="font-medium  text-gray-700">Amount</label>
-                            <input id="mobile-number" type="number"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter amount to transfer" required />
-
-                            <label class="font-medium text-gray-700">Pin Number</label>
-                            <input id="pin-number" type="password"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 4 Digit pin number" required />
-
-                            <button id="login-btn"
-                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Send Now</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Get Bonus Section -->
-        <section id="get-bonus-section" class="pt-8 pb-20 px-6">
-            <div class="">
-                <h1 class="font-semibold text-lg">Get Bonus</h1>
-            </div>
-            <div class="py-4 space-y-3">
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <form class="w-full">
-                        <fieldset class="fieldset">
-
-                            <label class="font-medium  text-gray-700">Enter Bonus Coupon</label>
-                            <input id="mobile-number" type="text"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter your coupon" required />
-
-                            <button id="login-btn"
-                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Get Bonus</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pay Bill Section -->
-        <section id="pay-bill-section" class="pt-8 pb-20 px-6">
-            <div class="">
-                <h1 class="font-semibold text-lg">Pay Bill</h1>
-            </div>
-            <div class="py-4 space-y-3">
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <form class="w-full">
-                        <fieldset class="fieldset">
-
-                            <label class="font-medium text-gray-700">Select To Pay</label>
-                            <select
-                                class="select  w-full px-5 select-lg font-light text-sm border-none bg-neutral-100 rounded-full">
-                                <option disabled selected>Select Pay</option>
-                                <option value="Education">Education</option>
-                                <option value="Gas">Gas</option>
-                                <option value="Water">Water</option>
-                                <option value="Internet">Internet</option>
-                                <option value="Telephone">Telephone</option>
-                            </select>
-
-                            <label class="font-medium  text-gray-700">Biller Acount Number</label>
-                            <input id="mobile-number" type="text"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 11 digit account number" required />
-
-                            <label class="font-medium  text-gray-700">Amount to Pay</label>
-                            <input id="mobile-number" type="number"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Add amount to pay" required />
-
-                            <label class="font-medium text-gray-700">Pin Number</label>
-                            <input id="pin-number" type="password"
-                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
-                                placeholder="Enter 4 Digit pin number" required />
-
-                            <button id="login-btn"
-                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Pay Now</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Transaction History Section -->
-        <section id="transaction-history-section" class="pt-8 pb-20 px-6">
-            <div class="flex justify-between items-center">
-                <h1 class="font-semibold text-lg">Transaction History</h1>
-                <p class="text-gray-500 text-sm cursor-pointer">View All</p>
-            </div>
-            <div class="py-4 space-y-3">
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
-                    <div class="flex  justify-center items-center gap-3">
-                        <div class="bg-gray-200 rounded-full aspect-square p-3">
-                            <img src="assets/images/wallet1.png" alt="Add Money">
-                        </div>
-                        <div class="text-gray-700">
-                            <h1 class="font-semibold text-base">Electricity Bill</h1>
-                            <p class="text-xs">Today 01:44 AM</p>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="text-gray-700 pr-2 fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </footer>
-
     <script src="utilities/utilities.js"></script>
-    <script src="script/toggle.js"></script>
-    <script src="script/addMoney.js"></script>
+    <script src="script/login.js"></script>
 </body>
 
 </html>
