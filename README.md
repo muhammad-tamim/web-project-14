@@ -9,7 +9,7 @@
 
 ## What I Learned New while Building This Project:
 
-### 1. How to customization tailwind and daisyui:  
+1. How to customization tailwind CSS:  
 ```css
     <style type="text/tailwindcss">
         @theme {
@@ -19,6 +19,11 @@
 ```  
 
 ## Challenges I faced while Building This Project:
+
+1. I spent several hours designing the login page. At first, I couldn’t make it vertically and horizontally centered. Then I struggled with positioning the logo image with a background properly.  
+   
+![login-page](assets/screenshots/login-page.png)
+
 
 ## What I Learned New while Building This Project:
 
