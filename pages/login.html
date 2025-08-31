@@ -41,12 +41,15 @@
                     <form class="card-body">
                         <fieldset class="fieldset">
                             <label class="font-medium">Mobile Number</label>
-                            <input type="tel" class="input w-full border-none bg-neutral-100 rounded-full"
+                            <input id="mobile-number" type="number"
+                                class="input w-full border-none bg-neutral-100 rounded-full"
                                 placeholder="Enter your number" required />
                             <label class="font-medium">4 Digit Pin</label>
-                            <input type="password" class="input w-full border-none bg-neutral-100 rounded-full"
+                            <input id="pin-number" type="password"
+                                class="input w-full border-none bg-neutral-100 rounded-full"
                                 placeholder="Enter 4 Digit pin" required />
-                            <button class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Login</button>
+                            <button id="login-btn"
+                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Login</button>
                         </fieldset>
                     </form>
                 </div>
@@ -54,6 +57,9 @@
         </div>
 
     </section>
+
+    <script src="../utilities/utilities.js"></script>
+    <script src="../script/login.js"></script>
 </body>
 
 </html>
