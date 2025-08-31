@@ -27,25 +27,85 @@
     </style>
 </head>
 
-<body class="font-outfit max-w-md mx-auto">
-    <header class="flex justify-between items-center py-2 px-6">
-        <div class="flex items-center ">
-            <div>
-                <img class="size-12" src="assets/images/Group.png" alt="Logo">
+<body class="font-outfit max-w-md mx-auto border">
+    <!-- header section -->
+    <section class="border-b border-b-gray-200 shadow-sm">
+        <header class="flex justify-between items-center py-2 p-6">
+            <div class="flex items-center ">
+                <div>
+                    <img class="size-12" src="assets/images/Group.png" alt="Logo">
+                </div>
+                <div>
+                    <h3 class="font-extrabold text-lg">$<span>45000</span></h3>
+                    <p class="text-gray-500">Available Balance</p>
+                </div>
             </div>
             <div>
-                <h3 class="font-extrabold text-lg">$<span>45000</span></h3>
-                <p class="text-gray-400">Available Balance</p>
+                <button class="btn btn-ghost border-gray-200 text-gray-500">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Log Out
+                </button>
             </div>
-        </div>
-        <div>
-            <button class="btn btn-ghost border-gray-200 text-gray-400">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                Log Out
-            </button>
-        </div>
-    </header>
-    <main></main>
+        </header>
+    </section>
+
+    <main>
+        <!-- Services Section -->
+        <section class="rounded-b-3xl">
+            <div class="p-6">
+                <div class="py-8">
+                    <h1 class="font-bold text-2xl pb-3">Welcome to Payooo!</h1>
+                    <p class="text-gray-500">Enjoy fast, secure, and convenient financial services with low cash-out
+                        fees.
+                    </p>
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div
+                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
+                        <div>
+                            <img src="assets/images/wallet1.png" alt="add money">
+                        </div>
+                        <p class="text-sm ">Add Money</p>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
+                        <div>
+                            <img src="assets/images/send1.png" alt="add money">
+                        </div>
+                        <p class="text-sm ">Cash Out</p>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-2 py-5 space-y-2 cursor-pointer">
+                        <div>
+                            <img src="assets/images/money1.png" alt="add money">
+                        </div>
+                        <p class="text-sm ">Transfer Money</p>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
+                        <div>
+                            <img src="assets/images/bonus1.png" alt="add money">
+                        </div>
+                        <p class="text-sm ">Get Bonus</p>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
+                        <div>
+                            <img src="assets/images/purse1.png" alt="add money">
+                        </div>
+                        <p class="text-sm ">Pay Bill</p>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center border border-gray-200 hover:border-primary text-gray-700 hover:text-primary rounded-xl px-6 py-5 space-y-2 cursor-pointer">
+                        <div>
+                            <img src="assets/images/transaction1.png" alt="add money">
+                        </div>
+                        <p class="text-sm ">Transaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
