@@ -1,6 +1,13 @@
 function getInputValue(id) {
-    document.getElementById(id).value;
+    return document.getElementById(id).value;
 }
+
+function getIntegerInputValue(id) {
+    const element = document.getElementById(id).value;
+    const convertedElement = parseInt(element);
+    return convertedElement;
+}
+
 
 function handleToggle(id, status) {
     const element = document.getElementById(id);
