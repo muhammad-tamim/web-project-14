@@ -2,7 +2,7 @@
 
 ## Project Description: 
 
-Payoo is a Mobile Financial Services app built with HTML, CSS, and JavaScript. I created this project to practice DOM manipulation and event handling in JavaScript. In this project, I can log in and log out, and after successfully logging in with a number and PIN, I can perform different actions like adding money, cashing out, transferring money, getting a bonus using a coupon code, paying bills, and viewing the transaction history.
+Payoo is a Mobile Financial Services app built with HTML, Tailwind CSS, DaisyUI and JavaScript. I created this project to practice DOM manipulation and event handling in JavaScript. In this project, I can log in and log out, and after successfully logging in with a number and PIN, I can perform different actions like adding money, cashing out, transferring money, getting a bonus using a coupon code, paying bills, and viewing the transaction history.
 
 ## Live Site Link:
 
@@ -10,6 +10,7 @@ https://web-project-14.netlify.app/
 
 ## Project Video:
 
+https://github.com/user-attachments/assets/bf205595-e085-4010-a7b6-96801607251e
 
 ## What I Learned New while Building This Project:
 
