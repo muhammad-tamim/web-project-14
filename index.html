@@ -172,6 +172,49 @@
                 </div>
             </div>
         </section>
+
+        <!-- Add Money Section -->
+        <section class="pt-8 pb-20 px-6">
+            <div class="">
+                <h1 class="font-semibold text-lg">Add Money</h1>
+            </div>
+            <div class="py-4 space-y-3">
+                <div class="flex justify-between items-center bg-white shadow-sm rounded-xl px-4 py-3">
+                    <form class="w-full">
+                        <fieldset class="fieldset">
+
+                            <label class="font-medium text-gray-700">Select A Bank</label>
+                            <select
+                                class="select  w-full px-5 select-lg font-light text-sm border-none bg-neutral-100 rounded-full">
+                                <option disabled selected>Select Bank</option>
+                                <option value="Brac Bank">BRAC BANK</option>
+                                <option value="City Bank">CITY BANK</option>
+                                <option value="Sonali Bank">SONALI BANK</option>
+                                <option value="Eastern Bank">EASTERN BANK</option>
+                            </select>
+
+                            <label class="font-medium  text-gray-700">Bank Acount Number</label>
+                            <input id="mobile-number" type="text"
+                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
+                                placeholder="Enter 11 digit account number" required />
+
+                            <label class="font-medium  text-gray-700">Amount to Add</label>
+                            <input id="mobile-number" type="number"
+                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
+                                placeholder="Add amount to withdraw" required />
+
+                            <label class="font-medium text-gray-700">Pin Number</label>
+                            <input id="pin-number" type="password"
+                                class="input w-full px-5 input-lg font-light text-sm border-none bg-neutral-100 rounded-full"
+                                placeholder="Enter 4 Digit pin" required />
+
+                            <button id="login-btn"
+                                class="btn bg-primary btn-lg text-white text-xl rounded-full mt-2">Add Money</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 
