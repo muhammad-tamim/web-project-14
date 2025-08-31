@@ -22,12 +22,29 @@
     <style type="text/tailwindcss">
         @theme {
         --color-primary: #0874F2;
+        --color-secondary: #080808;
       }
     </style>
 </head>
 
-<body>
-    <header></header>
+<body class="font-outfit max-w-md mx-auto">
+    <header class="flex justify-between items-center py-2 px-6">
+        <div class="flex items-center ">
+            <div>
+                <img class="size-12" src="assets/images/Group.png" alt="Logo">
+            </div>
+            <div>
+                <h3 class="font-extrabold text-lg">$<span>45000</span></h3>
+                <p class="text-gray-400">Available Balance</p>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-ghost border-gray-200 text-gray-400">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log Out
+            </button>
+        </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
