@@ -11,6 +11,7 @@ document.getElementById("add-money-btn").addEventListener("click", (e) => {
 
             const sum = mainBalance + addMoneyAmount;
             document.getElementById("main-balance").innerText = sum;
+            alert(`successfully added money ${addMoneyAmount}`);
         }
         else {
             alert("Your pin number must be 1234")
