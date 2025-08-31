@@ -17,7 +17,7 @@
       }
     </style>
 ```  
-2. If we want to handle toggle using tailwind CSS, we have this use if-else to add and remove: 
+2. If we want to handle toggle using tailwind CSS, we have to use if-else and add and remove: 
 ```js
 function handleToggle(id, status) {
     const element = document.getElementById(id);
@@ -39,14 +39,16 @@ function handleToggle(id, status) {
 }
 ```
 
+3. How to redirect one html file to another html file using ```window.location.href``` properties.
+
+
+
 ## Challenges I faced while Building This Project:
 
 1. I spent several hours designing the login page. At first, I couldn’t make it vertically and horizontally centered. Then I struggled with positioning the logo image with a background properly.  
    
 ![login-page](assets/screenshots/login-page.png)
 
-
-## What I Learned New while Building This Project:
 
 ## Contact With Me: 
 
