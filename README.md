@@ -1,8 +1,12 @@
-# Project Name: 
+# Project Name: Payoo
 
 ## Project Description: 
 
+Payoo is a Mobile Financial Services app built with HTML, CSS, and JavaScript. I created this project to practice DOM manipulation and event handling in JavaScript. In this project, I can log in and log out, and after successfully logging in with a number and PIN, I can perform different actions like adding money, cashing out, transferring money, getting a bonus using a coupon code, paying bills, and viewing the transaction history.
+
 ## Live Site Link:
+
+https://web-project-14.netlify.app/
 
 ## Project Video:
 
@@ -41,7 +45,7 @@ function handleToggle(id, status) {
 
 3. How to redirect one html file to another html file using ```window.location.href``` properties.
 
-
+![page navigation](assets/screenshots/page-navigation.gif)
 
 ## Challenges I faced while Building This Project:
 
