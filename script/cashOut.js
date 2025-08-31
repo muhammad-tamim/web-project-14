@@ -16,7 +16,7 @@ document.getElementById("cash-out-btn").addEventListener("click", (e) => {
 
             const subtraction = mainBalance - cashOutAmount;
             document.getElementById("main-balance").innerText = subtraction;
-            alert(`successfully cash out ${cashOutAmount}`);
+            alert(`successfully Cash Out ${cashOutAmount} Tk form ${cashOutMobileNumber} account`);
         }
         else {
             alert("Your pin number must be 1234")
