@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 document.getElementById("add-money-btn").addEventListener("click", (e) => {
     e.preventDefault()
     const selectedBank = getInputValue("select-bank");
